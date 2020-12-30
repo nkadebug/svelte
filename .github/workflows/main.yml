@@ -13,10 +13,10 @@ jobs:
       - run: |
           git config --global user.email "nka.debug@gmail.com"
           git config --global user.name "nkadebug"
-          git checkout gh-pages
+          git checkout -b gh-pages
           git rm -rf .
           git checkout master -- .gitignore
-          git checkout master -- public
+          git checkout master -- ./public
           cp -r public/* .
           git add .
           git commit -m "Auto Updated $(date)"
