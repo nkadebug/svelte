@@ -18,7 +18,7 @@ jobs:
           git rm -rf .
           git checkout master -- .gitignore
           git checkout master -- public
-          mv -r public/* .
+          cp -r public/* .
           rm -rf public
           git add .
           git commit -m "Auto Updated $(date)"
