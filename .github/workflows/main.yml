@@ -18,7 +18,8 @@ jobs:
           git rm -rf .
           git checkout master -- .gitignore
           git checkout master -- public
-          cp -r public/* .
+          mv -r public/* .
+          rm -rf public
           git add .
           git commit -m "Auto Updated $(date)"
           git push origin gh-pages
