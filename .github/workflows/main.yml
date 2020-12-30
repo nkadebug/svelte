@@ -13,6 +13,7 @@ jobs:
       - run: |
           git config --global user.email "nka.debug@gmail.com"
           git config --global user.name "nkadebug"
+          git pull
           git checkout -b gh-pages
           git rm -rf .
           git checkout master -- .gitignore
