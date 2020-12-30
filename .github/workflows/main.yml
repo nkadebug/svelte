@@ -17,7 +17,7 @@ jobs:
           git checkout -b gh-pages
           git rm -rf .
           git checkout master -- .gitignore
-          git checkout master -- public/*
+          git checkout master -- public
           cp -r public/* .
           git add .
           git commit -m "Auto Updated $(date)"
